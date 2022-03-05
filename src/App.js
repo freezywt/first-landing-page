@@ -7,6 +7,7 @@ import { GridOne } from './templates/GridOne';
 import { Gallery } from './templates/Gallery';
 import { GridTwo } from './templates/GridTwo';
 import { Pricing } from './templates/Pricing';
+import { ContactMe } from './templates/ContactMe';
 
 // css
 import './assets/css/App.css';
@@ -27,6 +28,7 @@ function App() {
       <Gallery />
       <GridTwo />
       <Pricing />
+      <ContactMe />
       <Footer />
     </div>
   );

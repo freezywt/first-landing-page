@@ -24,5 +24,9 @@ module.exports = {
     'react/prop-types': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/img-redundant-alt': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'label-has-associated-control': 'off',
+    'jsx-a11y/label-has-for': 'off',
+    'no-alert': 'off',
   },
 };

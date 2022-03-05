@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// components
+import { Header } from './components/Header';
+import { Home } from './templates/Home';
+import { Intro } from './templates/Intro';
+import { Footer } from './components/Footer';
+import { GridOne } from './templates/GridOne';
+import { Gallery } from './templates/Gallery';
+import { GridTwo } from './templates/GridTwo';
+import { Pricing } from './templates/Pricing';
+
+// css
+import './assets/css/App.css';
+import './assets/css/classes.css';
+import './assets/css/elements.css';
+import './assets/css/menu.css';
+import './assets/css/responsive.css';
+import './assets/css/styles.css';
+import './assets/css/variables.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />
+      <Intro />
+      <GridOne />
+      <Gallery />
+      <GridTwo />
+      <Pricing />
+      <Footer />
     </div>
   );
 }

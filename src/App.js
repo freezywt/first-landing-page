@@ -21,7 +21,6 @@ import './Assets/css/responsive.css';
 import './Assets/css/styles.css';
 import './Assets/css/variables.css';
 import './Assets/custom/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

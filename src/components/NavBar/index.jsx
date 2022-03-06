@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import logo from '../../Assets/img/logo.png';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);

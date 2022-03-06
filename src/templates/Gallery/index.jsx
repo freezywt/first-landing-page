@@ -1,6 +1,7 @@
 import React from 'react';
 
-import gallery from '../../assets/img/gallery.jpeg';
+import { Footer } from '../../components/Footer/index';
+import gallery from '../../Assets/img/gallery.jpeg';
 
 export function Gallery() {
   return (
@@ -30,6 +31,7 @@ export function Gallery() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

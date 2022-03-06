@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/Footer/index';
 
 export function Intro() {
   return (
@@ -12,6 +13,7 @@ export function Intro() {
         <p>We’ll start with some background on the Mac transition and give an</p>
         <p>We’ll then explain how DRM/EME works on the new platform, talk abo</p>
       </div>
+      <Footer />
     </section>
   );
 }

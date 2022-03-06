@@ -159,12 +159,14 @@
   }
   
   .footer {
-    text-align: center;
+    text-align: center !important;
     font-size: 1.6rem;
   }
   
   .footer a {
     color: var(--primary-color);
+    text-align: center !important;
+    text-decoration: none !important;
   }
   
   .heart {

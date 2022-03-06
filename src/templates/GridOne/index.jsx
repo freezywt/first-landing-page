@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/Footer/index';
 
 export function GridOne() {
   return (
@@ -28,6 +29,7 @@ export function GridOne() {
           </article>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

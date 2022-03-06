@@ -1,8 +1,11 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 // components
-import { Header } from './components/Header';
+import NavBar from './components/NavBar';
+import Preloader from './components/Preloader';
 import { Home } from './templates/Home';
 import { Intro } from './templates/Intro';
-import { Footer } from './components/Footer';
 import { GridOne } from './templates/GridOne';
 import { Gallery } from './templates/Gallery';
 import { GridTwo } from './templates/GridTwo';
@@ -10,27 +13,34 @@ import { Pricing } from './templates/Pricing';
 import { ContactMe } from './templates/ContactMe';
 
 // css
-import './assets/css/App.css';
-import './assets/css/classes.css';
-import './assets/css/elements.css';
-import './assets/css/menu.css';
-import './assets/css/responsive.css';
-import './assets/css/styles.css';
-import './assets/css/variables.css';
+import './Assets/css/App.css';
+import './Assets/css/classes.css';
+import './Assets/css/elements.css';
+import './Assets/css/menu.css';
+import './Assets/css/responsive.css';
+import './Assets/css/styles.css';
+import './Assets/css/variables.css';
+import './Assets/custom/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <Intro />
-      <GridOne />
-      <Gallery />
-      <GridTwo />
-      <Pricing />
-      <ContactMe />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Preloader />
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/intro" component={Intro} />
+          <Route path="/grid-one" component={GridOne} />
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/grid-two" component={GridTwo} />
+          <Route path="/pricing" component={Pricing} />
+          <Route path="/contact-me" component={ContactMe} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+
   );
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import hero from '../../assets/img/javascript-not-optimized.svg';
+import hero from '../../Assets/img/javascript-not-optimized.svg';
+
+import { Footer } from '../../components/Footer/index';
 
 export function Home() {
   return (
@@ -18,6 +20,7 @@ export function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/Footer/index';
 
 export function GridTwo() {
   return (
@@ -28,6 +29,7 @@ export function GridTwo() {
           </article>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

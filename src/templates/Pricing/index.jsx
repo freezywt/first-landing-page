@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/Footer/index';
 
 export function Pricing() {
   return (
@@ -58,6 +59,7 @@ export function Pricing() {
           </table>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

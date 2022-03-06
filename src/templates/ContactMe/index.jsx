@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/Footer/index';
 
 export function ContactMe() {
   return (
@@ -32,6 +33,8 @@ export function ContactMe() {
           </fieldset>
         </div>
       </div>
+      <Footer />
     </section>
+
   );
 }

@@ -28,5 +28,6 @@ module.exports = {
     'label-has-associated-control': 'off',
     'jsx-a11y/label-has-for': 'off',
     'no-alert': 'off',
+    'react/destructuring-assignment': 'off',
   },
 };
